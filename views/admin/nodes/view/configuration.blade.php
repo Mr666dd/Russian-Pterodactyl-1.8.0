@@ -24,11 +24,11 @@
     <div class="col-xs-12">
         <div class="nav-tabs-custom nav-tabs-floating">
             <ul class="nav nav-tabs">
-                <li><a href="{{ route('admin.nodes.view', $node->id) }}">About</a></li>
-                <li><a href="{{ route('admin.nodes.view.settings', $node->id) }}">Settings</a></li>
-                <li class="active"><a href="{{ route('admin.nodes.view.configuration', $node->id) }}">Configuration</a></li>
-                <li><a href="{{ route('admin.nodes.view.allocation', $node->id) }}">Allocation</a></li>
-                <li><a href="{{ route('admin.nodes.view.servers', $node->id) }}">Servers</a></li>
+                <li><a href="{{ route('admin.nodes.view', $node->id) }}">Информация</a></li>
+                <li><a href="{{ route('admin.nodes.view.settings', $node->id) }}">Настройки</a></li>
+                <li class="active"><a href="{{ route('admin.nodes.view.configuration', $node->id) }}">Конфигурация</a></li>
+                <li><a href="{{ route('admin.nodes.view.allocation', $node->id) }}">Расположение</a></li>
+                <li><a href="{{ route('admin.nodes.view.servers', $node->id) }}">Сервера</a></li>
             </ul>
         </div>
     </div>
@@ -37,25 +37,25 @@
     <div class="col-sm-8">
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Configuration File</h3>
+                <h3 class="box-title">Файл конфигурации</h3>
             </div>
             <div class="box-body">
                 <pre class="no-margin">{{ $node->getYamlConfiguration() }}</pre>
             </div>
             <div class="box-footer">
-                <p class="no-margin">This file should be placed in your daemon's root directory (usually <code>/etc/pterodactyl</code>) in a file called <code>config.yml</code>.</p>
+                <p class="no-margin">Этот файл должен быть помещен в корневой каталог вашего демона (обычно <code>/etc/pterodactyl</code>) в файле с именем <code>config.yml</code>.</p>
             </div>
         </div>
     </div>
     <div class="col-sm-4">
         <div class="box box-success">
             <div class="box-header with-border">
-                <h3 class="box-title">Auto-Deploy</h3>
+                <h3 class="box-title">Автоматическое развертывание</h3>
             </div>
             <div class="box-body">
                 <p class="text-muted small">
-                    Use the button below to generate a custom deployment command that can be used to configure
-                    wings on the target server with a single command.
+                    Используйте кнопку ниже, чтобы создать пользовательскую команду развертывания, которую можно использовать для настройки
+                    wings на целевом сервере с помощью одной команды.
                 </p>
             </div>
             <div class="box-footer">

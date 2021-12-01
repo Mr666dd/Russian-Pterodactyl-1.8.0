@@ -90,7 +90,7 @@
                                 <i class="fa fa-gamepad"></i> <span>API Приложений</span>
                             </a>
                         </li>
-                        <li class="header">MANAGEMENT</li>
+                        <li class="header">Управление</li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.databases') ?: 'active' }}">
                             <a href="{{ route('admin.databases') }}">
                                 <i class="fa fa-database"></i> <span>Датабазы</span>
@@ -164,7 +164,7 @@
                     <strong><i class="fa fa-fw {{ $appIsGit ? 'fa-git-square' : 'fa-code-fork' }}"></i></strong> {{ $appVersion }}<br />
                     <strong><i class="fa fa-fw fa-clock-o"></i></strong> {{ round(microtime(true) - LARAVEL_START, 3) }}s
                 </div>
-                Копирка &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Програмное Обеспечение Pterodactyl</a>.
+                Копирайт(Изменено <a href="https://github.com/Mr666dd/">Mr.666dd</a>, <a href="https://github.com/MrWeez/">_MrWeez_</a>) &copy; 2015 - {{ date('Y') }} <a href="https://pterodactyl.io/">Програмное Обеспечение Pterodactyl</a>.
             </footer>
         </div>
         @section('footer-scripts')

@@ -22,38 +22,38 @@ return [
             'has_children' => 'Это ядро является родителем одного или нескольких других ядер. Пожалуйста, удалите эти ядра, прежде чем удалять это ядро.',
         ],
         'variables' => [
-            'env_not_unique' => 'The environment variable :name must be unique to this Egg.',
-            'reserved_name' => 'The environment variable :name is protected and cannot be assigned to a variable.',
-            'bad_validation_rule' => 'The validation rule ":rule" is not a valid rule for this application.',
+            'env_not_unique' => 'Переменная среды :name должна быть уникальной для этого ядра.',
+            'reserved_name' => 'Переменная среды :name защищена и не может быть присвоена переменной.',
+            'bad_validation_rule' => 'Правило проверки ":rule" не является допустимым правилом для этого приложения.',
         ],
         'importer' => [
-            'json_error' => 'There was an error while attempting to parse the JSON file: :error.',
-            'file_error' => 'The JSON file provided was not valid.',
-            'invalid_json_provided' => 'The JSON file provided is not in a format that can be recognized.',
+            'json_error' => 'Произошла ошибка при попытке проанализировать файл JSON: :error.',
+            'file_error' => 'Предоставленный файл JSON был недействителен.',
+            'invalid_json_provided' => 'Предоставленный файл JSON не имеет формата, который можно распознать.',
         ],
     ],
     'subusers' => [
-        'editing_self' => 'Editing your own subuser account is not permitted.',
-        'user_is_owner' => 'You cannot add the server owner as a subuser for this server.',
-        'subuser_exists' => 'A user with that email address is already assigned as a subuser for this server.',
+        'editing_self' => 'Редактирование вашей собственной учетной записи субпользователя не допускается.',
+        'user_is_owner' => 'Вы не можете добавить владельца сервера в качестве дополнительного пользователя для этого сервера.',
+        'subuser_exists' => 'Пользователь с таким адресом электронной почты уже назначен в качестве дополнительного пользователя для этого сервера.',
     ],
     'databases' => [
-        'delete_has_databases' => 'Cannot delete a database host server that has active databases linked to it.',
+        'delete_has_databases' => 'Невозможно удалить сервер узла базы данных, к которому подключены активные базы данных.',
     ],
     'tasks' => [
-        'chain_interval_too_long' => 'The maximum interval time for a chained task is 15 minutes.',
+        'chain_interval_too_long' => 'Максимальное время интервала для последовательной задачи составляет 15 минут.',
     ],
     'locations' => [
-        'has_nodes' => 'Cannot delete a location that has active nodes attached to it.',
+        'has_nodes' => 'Невозможно удалить местоположение, к которому прикреплены активные ноды.',
     ],
     'users' => [
-        'node_revocation_failed' => 'Failed to revoke keys on <a href=":link">Node #:node</a>. :error',
+        'node_revocation_failed' => 'Не удалось отозвать ключи на <a href=":link">ноде #:node</a>. :error',
     ],
     'deployment' => [
-        'no_viable_nodes' => 'No nodes satisfying the requirements specified for automatic deployment could be found.',
-        'no_viable_allocations' => 'No allocations satisfying the requirements for automatic deployment were found.',
+        'no_viable_nodes' => 'Не удалось найти ноды, удовлетворяющих требованиям, указанным для автоматического развертывания.',
+        'no_viable_allocations' => 'Не было найдено расположений, удовлетворяющих требованиям для автоматического развертывания.',
     ],
     'api' => [
-        'resource_not_found' => 'The requested resource does not exist on this server.',
+        'resource_not_found' => 'Запрошенный ресурс не существует на этом сервере.',
     ],
 ];
