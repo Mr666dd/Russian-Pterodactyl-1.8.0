@@ -10,7 +10,7 @@
 @endsection
 
 @section('content-header')
-    <h1>{{ $node->name }}<small>A quick overview of your node.</small></h1>
+    <h1>{{ $node->name }}<small>Краткий обзор ноды.</small></h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('admin.index') }}">Администрация</a></li>
         <li><a href="{{ route('admin.nodes') }}">Ноды</a></li>
@@ -26,7 +26,7 @@
                 <li class="active"><a href="{{ route('admin.nodes.view', $node->id) }}">Информация</a></li>
                 <li><a href="{{ route('admin.nodes.view.settings', $node->id) }}">Настройки</a></li>
                 <li><a href="{{ route('admin.nodes.view.configuration', $node->id) }}">Конфигурация</a></li>
-                <li><a href="{{ route('admin.nodes.view.allocation', $node->id) }}">Расположение</a></li>
+                <li><a href="{{ route('admin.nodes.view.allocation', $node->id) }}">Расположения</a></li>
                 <li><a href="{{ route('admin.nodes.view.servers', $node->id) }}">Сервера</a></li>
             </ul>
         </div>

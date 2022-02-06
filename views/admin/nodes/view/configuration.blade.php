@@ -6,16 +6,16 @@
 @extends('layouts.admin')
 
 @section('title')
-    {{ $node->name }}: Configuration
+    {{ $node->name }}: Файл Конфигурации
 @endsection
 
 @section('content-header')
-    <h1>{{ $node->name }}<small>Your daemon configuration file.</small></h1>
+    <h1>{{ $node->name }}<small>Ваш конфигурационный файл Daemon'a.</small></h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}">Admin</a></li>
-        <li><a href="{{ route('admin.nodes') }}">Nodes</a></li>
+        <li><a href="{{ route('admin.index') }}">Администрация</a></li>
+        <li><a href="{{ route('admin.nodes') }}">Ноды</a></li>
         <li><a href="{{ route('admin.nodes.view', $node->id) }}">{{ $node->name }}</a></li>
-        <li class="active">Configuration</li>
+        <li class="active">Конфигурация</li>
     </ol>
 @endsection
 
@@ -27,7 +27,7 @@
                 <li><a href="{{ route('admin.nodes.view', $node->id) }}">Информация</a></li>
                 <li><a href="{{ route('admin.nodes.view.settings', $node->id) }}">Настройки</a></li>
                 <li class="active"><a href="{{ route('admin.nodes.view.configuration', $node->id) }}">Конфигурация</a></li>
-                <li><a href="{{ route('admin.nodes.view.allocation', $node->id) }}">Расположение</a></li>
+                <li><a href="{{ route('admin.nodes.view.allocation', $node->id) }}">Расположения</a></li>
                 <li><a href="{{ route('admin.nodes.view.servers', $node->id) }}">Сервера</a></li>
             </ul>
         </div>
