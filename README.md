@@ -1,4 +1,7 @@
 Русская версия панели <a href="https://github.com/pterodactyl/panel">Pterodactyl<a>.
+
+На панель версии 1.х.х можно поставить только 1 перевод! Учтите это!
+
 Что бы поставить перевод - нужно:
   
       - Удалить /var/www/pterodactyl/resourses/langs/, 
