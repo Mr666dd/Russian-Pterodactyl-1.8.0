@@ -6,15 +6,15 @@
 @extends('layouts.admin')
 
 @section('title')
-    Create User
+    Создать польззователя
 @endsection
 
 @section('content-header')
-    <h1>Create User<small>Add a new user to the system.</small></h1>
+    <h1>Create User<small>Зарегистрировать пользователя в системе.</small></h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}">Admin</a></li>
-        <li><a href="{{ route('admin.users') }}">Users</a></li>
-        <li class="active">Create</li>
+        <li><a href="{{ route('admin.index') }}">Администрация</a></li>
+        <li><a href="{{ route('admin.users') }}">Пользователи</a></li>
+        <li class="active">Создать</li>
     </ol>
 @endsection
 
@@ -24,65 +24,65 @@
         <div class="col-md-6">
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Identity</h3>
+                    <h3 class="box-title">Идентификация</h3>
                 </div>
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="email" class="control-label">Email</label>
+                        <label for="email" class="control-label">Почта</label>
                         <div>
                             <input type="text" autocomplete="off" name="email" value="{{ old('email') }}" class="form-control" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="username" class="control-label">Username</label>
+                        <label for="username" class="control-label">Имя пользователя</label>
                         <div>
                             <input type="text" autocomplete="off" name="username" value="{{ old('username') }}" class="form-control" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="name_first" class="control-label">Client First Name</label>
+                        <label for="name_first" class="control-label">Имя клиента</label>
                         <div>
                             <input type="text" autocomplete="off" name="name_first" value="{{ old('name_first') }}" class="form-control" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="name_last" class="control-label">Client Last Name</label>
+                        <label for="name_last" class="control-label">Фамилия клиента</label>
                         <div>
                             <input type="text" autocomplete="off" name="name_last" value="{{ old('name_last') }}" class="form-control" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">Default Language</label>
+                        <label class="control-label">Язык по умолчанию</label>
                         <div>
                             <select name="language" class="form-control">
                                 @foreach($languages as $key => $value)
                                     <option value="{{ $key }}" @if(config('app.locale') === $key) selected @endif>{{ $value }}</option>
                                 @endforeach
                             </select>
-                            <p class="text-muted"><small>The default language to use when rendering the Panel for this user.</small></p>
+                            <p class="text-muted"><small>Язык по умолчанию, используемый при отображении панели для этого пользователя.</small></p>
                         </div>
                     </div>
                 </div>
                 <div class="box-footer">
                     {!! csrf_field() !!}
-                    <input type="submit" value="Create User" class="btn btn-success btn-sm">
+                    <input type="submit" value="Создать пользователя" class="btn btn-success btn-sm">
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Permissions</h3>
+                    <h3 class="box-title">Права</h3>
                 </div>
                 <div class="box-body">
                     <div class="form-group col-md-12">
-                        <label for="root_admin" class="control-label">Administrator</label>
+                        <label for="root_admin" class="control-label">Администратор</label>
                         <div>
                             <select name="root_admin" class="form-control">
                                 <option value="0">@lang('strings.no')</option>
                                 <option value="1">@lang('strings.yes')</option>
                             </select>
-                            <p class="text-muted"><small>Setting this to 'Yes' gives a user full administrative access.</small></p>
+                            <p class="text-muted"><small>Установите значение 'Да', если хотите выдать пользователю права администратора.</small></p>
                         </div>
                     </div>
                 </div>
@@ -91,11 +91,11 @@
         <div class="col-md-6">
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Password</h3>
+                    <h3 class="box-title">Пароль</h3>
                 </div>
                 <div class="box-body">
                     <div class="alert alert-info">
-                        <p>Providing a user password is optional. New user emails prompt users to create a password the first time they login. If a password is provided here you will need to find a different method of providing it to the user.</p>
+                        <p>Указание данных в этом поле необязательно. Новые пользователи будут получать электронные письма, если настроена их отправка, они получат в нём пароль. Если здесь указан пароль, вам нужно будет найти другой способ его предоставления пользователю.</p>
                     </div>
                     <div id="gen_pass" class=" alert alert-success" style="display:none;margin-bottom: 10px;"></div>
                     <div class="form-group">
