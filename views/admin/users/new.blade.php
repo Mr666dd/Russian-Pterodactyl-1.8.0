@@ -10,7 +10,7 @@
 @endsection
 
 @section('content-header')
-    <h1>Create User<small>Зарегистрировать пользователя в системе.</small></h1>
+    <h1>Добавить пользователя <small>Зарегистрировать пользователя в системе.</small></h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('admin.index') }}">Администрация</a></li>
         <li><a href="{{ route('admin.users') }}">Пользователи</a></li>
