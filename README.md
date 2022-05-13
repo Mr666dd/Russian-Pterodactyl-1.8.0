@@ -1,14 +1,22 @@
- * Русская версия панели <a href="https://github.com/pterodactyl/panel">Pterodactyl<a>.
-
-- На панель версии 1.х.х можно поставить только 1 перевод! Учтите это!
+* Русская версия панели <a href="https://github.com/pterodactyl/panel">Pterodactyl<a>.
+* На панель версии 1.х.х можно поставить только 1 перевод! Учтите это!
 
 Что бы поставить перевод - нужно:
+```console
+# Удалит папку с англиском языком
+rm -rf /var/www/pterodactyl/resourses/lang/
+# Удалит папку со страницами панели
+rm -rf /var/www/pterodactyl/resourses/views/
+# Зайти в нужную папку
+cd /var/www/pterodactyl/resources/
+# Скачает перевод
+curl -Lo ru.zip https://github.com/Mr666dd/Russian-Pterodactyl-1.7.0.git
+# Разархивирует zip
+unzip ru.zip
+# Зайти в нужную папку
+cd /var/www/pterodactyl/
+# Очистить кэш
+php artisan view:clear
+```
   
-      - Удалить /var/www/pterodactyl/resourses/langs/, 
-      - Удалить /var/www/pterodactyl/resourses/wiews/,
-      - Скачать мой перевод,
-      - Загрузить их по этому пути: /var/www/pterodactyl/resourses/,
-      - Ввести php8.0 /var/www/pterodactyl/artisan view:clear
-      - Радоватся!
-  
-  Учтите, что перевод может не встать(сделайте копию панели)!
+Учтите, что перевод может не встать (сделайте копию панели)!
