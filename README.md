@@ -10,7 +10,7 @@ rm -rf /var/www/pterodactyl/resourses/views/
 # Зайти в нужную папку
 cd /var/www/pterodactyl/resources/
 # Скачает перевод
-curl -Lo ru.zip https://github.com/Mr666dd/Russian-Pterodactyl-1.7.0.git
+curl -Lo ru.zip https://github.com/Mr666dd/Russian-Pterodactyl-1.8.0.git
 # Разархивирует zip
 unzip ru.zip
 # Зайти в нужную папку
