@@ -4,9 +4,9 @@
 Что бы поставить перевод - нужно:
 ```console
 # Удалит папку с англиском языком
-rm -rf /var/www/pterodactyl/resourses/lang/
+rm -rf /var/www/pterodactyl/resources/lang/
 # Удалит папку со страницами панели
-rm -rf /var/www/pterodactyl/resourses/views/
+rm -rf /var/www/pterodactyl/resources/views/
 # Зайти в нужную папку
 cd /var/www/pterodactyl/resources/
 # Скачает перевод
