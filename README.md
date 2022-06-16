@@ -3,12 +3,13 @@
 
 Что бы поставить перевод - нужно:
 ```console
+cd "Папка панели"
 # Удалит папку с англиском языком
-rm -rf /var/www/pterodactyl/resources/lang/
+rm -rf resources/lang/
 # Удалит папку со страницами панели
-rm -rf /var/www/pterodactyl/resources/views/
+rm -rf resources/views/
 # Зайти в нужную папку
-cd /var/www/pterodactyl/resources/
+cd resources/
 # Скачает перевод
 curl -Lo ru.zip https://github.com/Mr666dd/Russian-Pterodactyl-1.8.0.git
 # Разархивирует zip
