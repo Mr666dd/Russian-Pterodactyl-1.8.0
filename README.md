@@ -3,6 +3,8 @@
 
 Что бы поставить перевод - нужно:
 ```console
+# Установка git
+apt install git
 cd "Папка панели"
 # Удалит папку с англиском языком
 rm -rf resources/lang/
@@ -11,7 +13,7 @@ rm -rf resources/views/
 # Зайти в нужную папку
 cd resources/
 # Скачает перевод
-curl -Lo ru.zip https://github.com/Mr666dd/Russian-Pterodactyl-1.8.0.git
+git clone https://github.com/Mr666dd/Russian-Pterodactyl-1.8.0.git
 # Разархивирует zip
 unzip ru.zip
 # Зайти в нужную папку
