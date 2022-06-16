@@ -14,10 +14,8 @@ rm -rf resources/views/
 cd resources/
 # Скачает перевод
 git clone https://github.com/Mr666dd/Russian-Pterodactyl-1.8.0.git
-# Разархивирует zip
-unzip ru.zip
 # Зайти в нужную папку
-cd /var/www/pterodactyl/
+cd ..
 # Очистить кэш
 php artisan view:clear
 ```
